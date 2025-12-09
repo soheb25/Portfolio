@@ -1,60 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ansari Soheb - Personal Website</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <img src="img.jpg" alt="Ansari Mohammed Soheb" class="profile-img" data-aos="zoom-in">
-        <h1>Ansari Mohammed Soheb</h1>
-        <p>Web Developer | Aspiring Engineer</p>
-    </header>      
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ansari Soheb - Web Developer</title>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-  <section id="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>I am a passionate web developer with a keen interest in building clean and user-friendly web applications. I am currently pursuing engineering and constantly improving my coding skills.</p>
-  </section>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-  <section id="resume" data-aos="fade-left">
-    <h2>Resume</h2>
-    <p><strong>Profession:</strong> Software Engineer</p>
-    <p><strong>Education:</strong></p>
-    <ul>
-      <li>B.Tech from Gujarat Technological University (GTU)</li>
-      <li>12th – T&TV Sarvajanik High School, Surat</li>
-      <li>10th – Smt. M.P. Liliyawala Vidhyabhavan, Surat</li>
-    </ul>
-    <p><strong>Interests:</strong> Passionate about cricket and always eager to learn new technologies.</p>
-    <h3>Tech Stack</h3>
-    <p>HTML, CSS, JavaScript, Vue.js, Node.js, MySQL, Git, etc.</p>
-  </section>
-  
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ================= Header / Hero ================= -->
+    <header class="hero">
+      <nav class="navbar">
+        <div class="logo">AS.</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-  <section id="contact" data-aos="fade-right">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong> sohebansari252003@gmail.com</p>
-    <p><strong>Phone:</strong> 9875195717</p>
-  </section>
+      <div class="hero-content" data-aos="fade-up">
+        <div class="hero-text">
+          <p class="badge">Web Developer • Aspiring Engineer</p>
+          <h1>Hi, I'm <span>Ansari Mohammed Soheb</span></h1>
+          <p class="hero-subtitle">
+            I enjoy building clean, user-friendly web applications and learning
+            new technologies one project at a time.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View My Projects</a>
+            <a
+              href="https://github.com/soheb25"
+              target="_blank"
+              class="btn-outline"
+            >
+              Visit GitHub
+            </a>
+          </div>
+        </div>
 
-  <footer>
-    <p>© 2024 Ansari Soheb. All rights reserved.</p>
-  </footer>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-</body>
-<script>
-  AOS.init();
-</script>
+        <div class="hero-image-wrapper" data-aos="zoom-in">
+          <img src="img.jpg" alt="Ansari Mohammed Soheb" class="hero-image" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= About ================= -->
+      <section id="about" class="section" data-aos="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-text">
+          I am a passionate web developer currently pursuing engineering. I love
+          turning ideas into working applications using modern JavaScript
+          frameworks. My focus is on writing clean code, understanding how
+          things work under the hood, and continuously improving my
+          problem-solving skills.
+        </p>
+      </section>
+
+      <!-- ================= Resume ================= -->
+      <section id="resume" class="section" data-aos="fade-up">
+        <h2 class="section-title">Resume</h2>
+
+        <div class="resume-grid">
+          <div class="resume-card">
+            <h3>Profession</h3>
+            <p><strong>Role:</strong> Software Engineer (Web)</p>
+            <p>
+              I work primarily with JavaScript, focusing on building front-end
+              experiences and connecting them with APIs and backends.
+            </p>
+          </div>
+
+          <div class="resume-card">
+            <h3>Education</h3>
+            <ul class="list">
+              <li>B.Tech – Gujarat Technological University (GTU)</li>
+              <li>12th – T&amp;TV Sarvajanik High School, Surat</li>
+              <li>10th – Smt. M.P. Liliyawala Vidhyabhavan, Surat</li>
+            </ul>
+          </div>
+
+          <div class="resume-card">
+            <h3>Tech Stack</h3>
+            <p>
+              HTML, CSS, JavaScript, Vue.js, Node.js, MySQL, Git, Vite and
+              related tools.
+            </p>
+            <p>
+              <strong>Interests:</strong> Cricket, learning new technologies,
+              and building side projects.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Projects ================= -->
+      <section id="projects" class="section" data-aos="fade-up">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-text">
+          A few projects that helped me learn frontend, backend, and how to
+          structure real-world applications.
+        </p>
+
+        <div class="projects-grid">
+          <!-- ProductHunter -->
+          <article
+            class="project-card"
+            data-url="https://github.com/soheb25/ProductHunter"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <h3 class="project-title">ProductHunter</h3>
+            <p class="project-description">
+              A product exploration dashboard built with Vue 3 and Vite. It’s a
+              playground for experimenting with reusable components, state
+              management, and clean UI layouts for listing and managing
+              products.
+            </p>
+            <ul class="project-meta">
+              <li><strong>Tech:</strong> Vue 3, Vite, JavaScript, HTML, CSS</li>
+              <li>
+                <strong>Focus:</strong> Component-based architecture, responsive
+                UI, and project structure.
+              </li>
+            </ul>
+            <span class="project-link-chip">View on GitHub ↗</span>
+          </article>
+
+          <!-- WeatherApp -->
+          <article
+            class="project-card"
+            data-url="https://github.com/soheb25/WeatherApp"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3 class="project-title">WeatherApp</h3>
+            <p class="project-description">
+              A simple weather interface powered by Vue 3. The app lets users
+              search for a city and displays its weather information using a
+              clean, minimal design.
+            </p>
+            <ul class="project-meta">
+              <li><strong>Tech:</strong> Vue 3, Vite, JavaScript</li>
+              <li>
+                <strong>Focus:</strong> API integration, form handling, and
+                dynamic UI updates.
+              </li>
+            </ul>
+            <span class="project-link-chip">View on GitHub ↗</span>
+          </article>
+
+          <!-- weather (full-stack) -->
+          <article
+            class="project-card"
+            data-url="https://github.com/soheb25/weather"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <h3 class="project-title">Weather (Full-Stack)</h3>
+            <p class="project-description">
+              A more advanced weather project that combines a Vue 3 frontend
+              with a backend folder for server-side logic. This setup is useful
+              for experimenting with full-stack concepts like API endpoints and
+              organizing a scalable project.
+            </p>
+            <ul class="project-meta">
+              <li><strong>Tech:</strong> Vue 3, JavaScript, Backend folder</li>
+              <li>
+                <strong>Focus:</strong> Full-stack structure, backend
+                integration, and project organization.
+              </li>
+            </ul>
+            <span class="project-link-chip">View on GitHub ↗</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= Contact ================= -->
+      <section id="contact" class="section" data-aos="fade-up">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-text">
+          Feel free to reach out for collaborations, internship opportunities,
+          or just to talk about web development and projects.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a href="mailto:sohebansari252003@gmail.com" class="contact-value">
+              sohebansari252003@gmail.com
+            </a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <a href="tel:+919875195717" class="contact-value">
+              +91 98751 95717
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer class="footer">
+      <p>© 2024 Ansari Soheb. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        once: true,
+      });
+
+      // Smooth scrolling for nav links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          if (targetId && targetId.startsWith("#")) {
+            e.preventDefault();
+            const el = document.querySelector(targetId);
+            if (el) {
+              window.scrollTo({
+                top: el.offsetTop - 80,
+                behavior: "smooth",
+              });
+            }
+          }
+        });
+      });
+
+      // 🔥 Make entire project card clickable
+      document.querySelectorAll(".project-card").forEach((card) => {
+        const url = card.getAttribute("data-url");
+        if (!url) return;
+
+        card.addEventListener("click", () => {
+          window.open(url, "_blank");
+        });
+      });
+    </script>
+  </body>
 </html>
